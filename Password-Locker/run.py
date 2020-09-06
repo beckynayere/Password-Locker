@@ -31,19 +31,19 @@ def del_credentials(credentials):
     '''
     credentials.delete_credentials()
 
-def find_credentials(account_name):        
+def find_credentials(user_name):        
     '''
-    Function that finds a user by account name and returns the name
+    Function that finds a user by user name and returns the name
     '''
-    return Credentials.find_by_user_name(credential_name)
+    return Credentials.find_by_account_name(user_name)
 def check_existing_credentials(user_name):
     '''
-    Function that check if a user exists with that account name and returns a Boolean
+    Function that check if a user exists with that user name and returns a Boolean
     '''
     return Credentials.credentials_exist(user_name) 
 def display_credentials():
     '''
-    Function that check if a user exist with that account name and return a boolean
+    Function that check if a user exist with that user name and return a boolean
     '''
     return Credentials.credentials_exist(user_name) 
 

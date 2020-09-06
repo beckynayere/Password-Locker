@@ -4,7 +4,7 @@ class User:
     """
 
     user_list = []
-   def save_user(self):
+    def save_user(self):
         '''
         save_user method saves contact objects into user_list
         '''
