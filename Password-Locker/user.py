@@ -4,7 +4,7 @@ class User:
     """
 
     user_list = []
-    def save_user(self):
+   def save_user(self):
         '''
         save_user method saves contact objects into user_list
         '''
@@ -14,23 +14,8 @@ class User:
         '''
         delete_user method deletes a saved user from the user_list
         '''
-        User.user_list.remove(self)    
-
-
-
-    def _init_ (self,user_name,password) :
-        self.user_name = user_name
-        self.password = password
-
-    def save_user(self):
-
-        '''
-    
-    save_user method saves a new user objects to the user_list
-    '''
-
-
-    User.user_list.remove(self)    
+        User.user_list.remove(self)   
+ 
 
     def __init__(self, first_name, last_name, user_name, password):
         '''

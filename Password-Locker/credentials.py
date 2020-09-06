@@ -46,4 +46,5 @@ class Credentials:
         for credential in cls.credential_list:
             if credential.account_name == account_name:
                 return True
-                return False
+
+        return False
