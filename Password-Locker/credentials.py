@@ -29,22 +29,22 @@ class Credentials:
         '''
         Credentials.credential_list.remove(self)    
 
-    def __init__(self, account_name, password):
+    def __init__(self, user_name, password):
       
 
-        self.account_name = account_name
+        self.user_name = user_name
         self.password = password
     @classmethod
-    def find_by_account_name(cls,account_name):   
+    def find_by_user_name(cls,user_name):   
        
         for credential in cls.credential_list:
-            if credential.account_name == account_name:
+            if credential.user_name == user_name:
                 return credential
     @classmethod
-    def credential_exist(cls,account_name):
+    def credential_exist(cls,user_name):
     
         for credential in cls.credential_list:
-            if credential.account_name == account_name:
+            if credential.user_name == user_name:
                 return True
 
         return False
