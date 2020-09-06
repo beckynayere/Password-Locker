@@ -35,7 +35,7 @@ def find_credentials(user_name):
     '''
     Function that finds a user by user name and returns the name
     '''
-    return Credentials.find_by_account_name(user_name)
+    return Credentials.find_by_user_name(user_name)
 def check_existing_credentials(user_name):
     '''
     Function that check if a user exists with that user name and returns a Boolean
