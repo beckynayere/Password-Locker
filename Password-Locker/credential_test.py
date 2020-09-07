@@ -21,7 +21,7 @@ class TestCredentials(unittest.TestCase):
         test_init test case to test if the object is initialized properly
         '''
         
-        self.assertEqual(self.new_credential.account_name, "jose")
+        self.assertEqual(self.new_credential.user_name, "jose")
         self.assertEqual(self.new_credential.password, "45678")
 
     def tearDown(self):
@@ -64,7 +64,7 @@ class TestCredentials(unittest.TestCase):
         test_credential = Credentials("igna", "bruse")
         test_credential.save_credential()
 
-        find_credential = Credentials.find_by_account_name("igna")
+        find_credential = Credentials.find_by_user_name("igna")
 
         self.assertEqual(find_credential.password, test_credential.password)
     def test_credential_exists(self):
